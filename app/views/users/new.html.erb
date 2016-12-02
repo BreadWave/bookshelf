@@ -1,25 +1,13 @@
 <% provide(:title, 'Registrarse') %>
+<% provide(:button_text, 'Crear mi cuenta') %>
 
 <h1>Registrese aqui</h1>
 <p>¿Nuevo en nuestra web? Pues registrese y goze de los beneficios que ofrese nuestro sitio</p>
 
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
-		    <%= form_for(@user, url: signup_path) do |f| %>
-		<%= render 'shared/error_messages' %>
-			<%= f.label :name, "Nombre de Usuario" %>
-			<%= f.text_field :name, class: 'form-control' %>
 
-			<%= f.label :email, "Correo electronico" %>
-			<%= f.email_field :email, class: 'form-control' %>
+		 <%= render 'form' %>
 
-			<%= f.label :password, "Contraseña" %>
-			<%= f.password_field :password, class: 'form-control' %>
-
-			<%= f.label :password_confirmation, "Confirmar contraseña" %>
-			<%= f.password_field :password_confirmation, class: 'form-control' %>
-
-			<%= f.submit "Crear mi cuenta", class: "btn btn-primary" %>
-		<% end %>
 	</div>
 </div>

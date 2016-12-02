@@ -1,0 +1,7 @@
+<h1>Bienvenido a Bookshelf <%= @user.name %></h1>
+
+<p>Espero que disfrutes mucho tu estancia con nosotros, pero antes de poder usar nuestro sitio web antes debes activar tu cuenta.</p>
+
+<p>Para ello es tan simple como pulsar el link que se encuentra abajo.</p>
+
+<%= link_to "Activa cuenta", edit_account_activation_url(@user.activation_token, email: @user.email) %>
