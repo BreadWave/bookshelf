@@ -2,7 +2,6 @@
 
 <div class="row">
 	<aside class="col-md-4">
-
 		<section class="user_info">
 			<h1>
 				<%= gravatar_for @user %>
@@ -15,16 +14,9 @@
 
 			<p>User created: <%= distance_of_time_in_words(Time.now, @user.created_at, include_seconds: true) %> ago.</p>
 		</section>
-
-		<section class="stats">
-			<%= render 'shared/stats' %>
-		</section>
-
 	</aside>
 
 	<div class="col-md-8">
-		<%= render 'follow_form' if logged_in? %>
-		
 		<% if @user.microposts.any? %>
 			<h3>Posteos (<%= @user.microposts.count %>)</h3>
 			<ol class="microposts">

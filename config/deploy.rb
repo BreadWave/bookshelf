@@ -1,10 +1,9 @@
-# config valid only for current version of Capistrano
-server '138.197.36.167', port: 22, roles: [:web, :app, :db], primary: true
+# Change these
+server '45.55.220.3', port: 3000, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:breadwave/bookshelf.git'
 set :application,     'bookshelf'
-set :user,            'deploy'
-
+set :user,            'root'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 

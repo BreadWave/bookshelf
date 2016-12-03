@@ -11447,6 +11447,7 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 71ms (Views: 64.6ms | ActiveRecord: 0.8ms)
 
 
+<<<<<<< HEAD
   [1m[35mSQL (198.0ms)[0m  [1m[33mUPDATE "users" SET "activated" = 't'[0m
   [1m[35mSQL (147.6ms)[0m  [1m[33mUPDATE "users" SET "activated_at" = '2016-12-02 15:30:07.298408'[0m
 Started GET "/" for 127.0.0.1 at 2016-12-02 12:30:23 -0300
@@ -14017,3 +14018,5 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 151ms (Views: 127.3ms | ActiveRecord: 3.8ms)
 
 
+=======
+>>>>>>> parent of a9f161c... Book Complete
