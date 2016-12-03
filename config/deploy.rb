@@ -1,7 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.6.1'
-
-server 'your_server_ip', port: your_port_num, roles: [:web, :app, :db], primary: true
+server '138.197.36.167', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:breadwave/bookshelf.git'
 set :application,     'bookshelf'
